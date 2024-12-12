@@ -1,7 +1,7 @@
 
 class Posts_API {
-    static Host_URL() { return "http://localhost:5000"; }
-    static POSTS_API_URL() { return this.Host_URL() + "/api/posts" };
+    static Host_URL() { return "https://sable-brass-aftermath.glitch.me"; }
+    static POSTS_API_URL() { return this.Host_URL() + "/api/Posts" };
 
     static initHttpState() {
         this.currentHttpError = "";

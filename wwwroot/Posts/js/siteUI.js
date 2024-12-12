@@ -248,7 +248,7 @@ async function renderPosts(queryString) {
 function renderPost(post, loggedUser) {
   let crudIcon;
   console.log("user", user);  
-  if(user.User.Authorizations.readAccess >= 2 && user.User.Authorizations.writeAccess >= 2){
+  if(user != null && user.User.Authorizations.readAccess >= 2 && user.User.Authorizations.writeAccess >= 2){
   crudIcon = `
         <span class="editCmd cmdIconSmall fa fa-pencil" postId="${post.Id}" title="Modifier nouvelle"></span>
         <span class="deleteCmd cmdIconSmall fa fa-trash" postId="${post.Id}" title="Effacer nouvelle"></span>
