@@ -246,7 +246,7 @@ async function renderPosts(queryString) {
   return endOfData;
 }
 function renderPost(post, loggedUser) {
-  let crudIcon;
+  let crudIcon = "";
   console.log("user", user);  
   if(user != null && user.User.Authorizations.readAccess >= 2 && user.User.Authorizations.writeAccess >= 2){
   crudIcon = `
