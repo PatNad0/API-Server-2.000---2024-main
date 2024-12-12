@@ -1,0 +1,12 @@
+.accountForm{
+    margin-top: 20px;
+}
+.btnContainer{
+    margin-top: 20px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+.cancelBtn{
+    background-color: grey;
+}
